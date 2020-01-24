@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="FP5-Gi-da3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login Portrait View Controller-->
+        <scene sceneID="7eW-yy-vyS">
+            <objects>
+                <viewController id="Vvd-2w-4tW" customClass="LoginPortraitViewController" customModule="MyGames_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ztr-Q9-ttc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b70-it-Vp6">
+                                <rect key="frame" x="32" y="436.5" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="goku" translatesAutoresizingMaskIntoConstraints="NO" id="vWG-CU-8kQ">
+                                <rect key="frame" x="127.5" y="245.5" width="159" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="159" id="Umx-Nl-XCW"/>
+                                    <constraint firstAttribute="width" secondItem="vWG-CU-8kQ" secondAttribute="height" multiplier="1:1" id="hen-T3-sV3"/>
+                                    <constraint firstAttribute="height" constant="159" id="n8c-9w-btn"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lom-fR-0wA">
+                                <rect key="frame" x="32" y="502.5" width="350" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYN-in-stf">
+                                <rect key="frame" x="32" y="568.5" width="350" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Login"/>
+                                <connections>
+                                    <action selector="LoginButtonPressed:" destination="Vvd-2w-4tW" eventType="touchUpInside" id="1fE-pj-kGo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qYN-in-stf" firstAttribute="centerX" secondItem="b8N-NM-ZhR" secondAttribute="centerX" id="75p-Kb-yzw"/>
+                            <constraint firstItem="Lom-fR-0wA" firstAttribute="top" secondItem="b70-it-Vp6" secondAttribute="bottom" constant="32" id="AkV-M8-EJe"/>
+                            <constraint firstItem="b70-it-Vp6" firstAttribute="top" secondItem="vWG-CU-8kQ" secondAttribute="bottom" constant="32" id="HKb-AP-d5H"/>
+                            <constraint firstItem="b70-it-Vp6" firstAttribute="centerX" secondItem="b8N-NM-ZhR" secondAttribute="centerX" id="It5-sX-lms"/>
+                            <constraint firstItem="vWG-CU-8kQ" firstAttribute="centerX" secondItem="b8N-NM-ZhR" secondAttribute="centerX" id="MAy-aL-t6U"/>
+                            <constraint firstItem="Lom-fR-0wA" firstAttribute="leading" secondItem="b8N-NM-ZhR" secondAttribute="leading" constant="32" id="cSi-tM-jFx"/>
+                            <constraint firstItem="qYN-in-stf" firstAttribute="leading" secondItem="b8N-NM-ZhR" secondAttribute="leading" constant="32" id="d29-ev-B1d"/>
+                            <constraint firstItem="vWG-CU-8kQ" firstAttribute="centerY" secondItem="b8N-NM-ZhR" secondAttribute="centerY" constant="-150" id="q0k-5Z-BrW"/>
+                            <constraint firstItem="Lom-fR-0wA" firstAttribute="centerX" secondItem="b8N-NM-ZhR" secondAttribute="centerX" id="rxQ-ah-5YT"/>
+                            <constraint firstItem="b70-it-Vp6" firstAttribute="leading" secondItem="b8N-NM-ZhR" secondAttribute="leading" constant="32" id="uAb-XL-Efh"/>
+                            <constraint firstItem="qYN-in-stf" firstAttribute="top" secondItem="Lom-fR-0wA" secondAttribute="bottom" constant="32" id="zdR-j4-FIq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b8N-NM-ZhR"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0NU-Hi-yh9"/>
+                    <connections>
+                        <outlet property="LoginButton" destination="qYN-in-stf" id="7jp-8s-Fct"/>
+                        <outlet property="logoImage" destination="vWG-CU-8kQ" id="tFG-pf-GyB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="phm-L4-Com" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="991" y="115"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZR9-iW-ELj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FP5-Gi-da3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="DhR-Bl-Pku">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Vvd-2w-4tW" kind="relationship" relationship="rootViewController" id="j9T-yK-uqZ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m0z-Ut-JNV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="114.50892857142857"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="goku" width="400" height="400"/>
+    </resources>
+</document>
